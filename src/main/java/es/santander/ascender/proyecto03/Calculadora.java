@@ -9,4 +9,11 @@ public class Calculadora {
         return substraendo - minuendo;
     }
 
+    public long multiplicar(long factor1, long factor2) {
+        return factor1 * factor2;
+    }
+
+    public double dividir(long dividendo, long divisor) {
+        return dividendo / divisor;
+    }
 }
