@@ -9,4 +9,11 @@ public class CalculadoraTest {
 
         calculadora.presentarTablaMultiplicar(6);
     }
+
+    @Test
+    public void testCalcularTablaMultiplicar() {
+        Calculadora calculadora = new Calculadora();
+
+        calculadora.calcularTablaMultiplicar(9);
+    }
 }
