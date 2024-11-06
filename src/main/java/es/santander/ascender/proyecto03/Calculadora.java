@@ -16,4 +16,11 @@ public class Calculadora {
     public double dividir(long dividendo, long divisor) {
         return dividendo / divisor;
     }
+
+    public void presentarTablaMultiplicar(int numero) {
+        
+        for (int i = 0 ; i <= 10 ; i = i + 1) {
+            System.out.println(i * numero);
+        }
+    }
 }
