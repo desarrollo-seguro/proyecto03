@@ -16,4 +16,18 @@ public class CalculadoraTest {
 
         calculadora.calcularTablaMultiplicar(9);
     }
+
+    @Test
+    public void testCalcularTablaMultiplicarConWhile() {
+        Calculadora calculadora = new Calculadora();
+
+        calculadora.calcularTablaMultiplicarConWhile(9);
+    }
+
+    @Test
+    public void testCalcularTablaMultiplicarConDoWhile() {
+        Calculadora calculadora = new Calculadora();
+
+        calculadora.calcularTablaMultiplicarConDoWhile(9);
+    }
 }

@@ -1,6 +1,10 @@
 package es.santander.ascender.proyecto03;
 
 public class Calculadora {
+    // final int valor = 4;
+
+
+
     public long sumar(long sumando1, long sumando2) {
         return sumando1 + sumando2;
     }
@@ -32,6 +36,36 @@ public class Calculadora {
         return tablaDeMultiplicar;
     }
 
+    public int[] calcularTablaMultiplicarConWhile(int numero) {
+        // Creo el array
+        int[] tablaDeMultiplicar = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        int i = 0;
+        while (i <= tablaDeMultiplicar.length - 1) {
+            tablaDeMultiplicar[i] = numero * i;
+            i = i +1;
+        }
+
+        // Retorno el array con la tabla de multiplicar
+        return tablaDeMultiplicar;
+    }
+
+    public int[] calcularTablaMultiplicarConDoWhile(int numero) {
+        // Creo el array
+        int[] tablaDeMultiplicar = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        int i = 0;
+        do {
+            tablaDeMultiplicar[i] = numero * i;
+            i = i +1;
+        } while (i <= tablaDeMultiplicar.length - 1);
+
+        // Retorno el array con la tabla de multiplicar
+        return tablaDeMultiplicar;
+    }
+
+
+
     private void jugarConArrays(int numero) {
         int[] resultados = null;
 
@@ -40,8 +74,12 @@ public class Calculadora {
         borrame[0] = 3;
 
         borrame[4] = 6;
+        System.out.println(borrame.length);
+        // borrame.length = 5;
 
         borrame[7] = borrame[0] + borrame[4];
+
+        // valor = 8;
 
         System.out.println(borrame[7]);
     }
